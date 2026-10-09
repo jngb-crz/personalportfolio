@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanGab — Personal Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header id="header">
+        <nav class="navbar glass">
+            <div class="logo">
+                <a href="#hero">&lt;JanGab/&gt;</a>
+            </div>
+            
+            <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#hero">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section section-padding">
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <p class="greeting">PERSONAL PORTFOLIO</p>
+                    <h1>Hi, I'm <span class="gradient-text">John Gabriel</span></h1>
+                    <p class="tagline">3rd Year BSIT Student | Specializing in Web & Mobile Applications Development</p>
+                    <p class="bio">
+                        I am passionate about developing user-friendly applications, exploring new technologies, and enhancing my skills in software development, UI/UX design, and problem-solving.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal delay-1">
+                    <div class="img-wrapper">
+                        <img src="profile.jpg" alt="Portrait photo of Alex Morgan">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-header reveal">
+                <h2>Selected <span class="gradient-text">Works</span></h2>
+                <p>A showcase of my recent projects, highlighting my skills in modern web development, UI/UX design, and interactive user experiences.</p>
+            </div>
+            
+            <div class="projects-grid">
+                
+                <article class="project-card glass reveal">
+                    <div class="card-img">
+                        <img src="synctrust.jpg" alt="Code snippet on computer screen">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">React & Node.js</span>
+                        <h3>SYNCTRUST</h3>
+                        <p>SyncTrust is a multipurpose cooperative management system designed to streamline cooperative operations, manage member information, monitor financial transactions, and improve the efficiency of daily administrative tasks through a centralized digital platform.</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn" target="_blank">Live Demo ↗</a>
+                            <a href="#" class="link-btn" target="_blank">Source Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card glass reveal delay-1">
+                    <div class="card-img">
+                        <img src="figurae.jpg" alt="Modern weather dashboard analytics">
+                    </div>
+                    <div class="project-info">
+                        <span class="badge">High-Fidelity Prototype</span>
+                        <h3>FIGURAE</h3>
+                        <p>Figurae is a POP MART-inspired collectible high-fidelity prototype featuring designer toys, blind box figures, and art collectibles. It offers a fun and engaging shopping experience through a visually appealing interface inspired by the world of collectible figures.</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn" target="_blank">Live Demo ↗</a>
+                            <a href="#" class="link-btn" target="_blank">Source Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="contact" class="footer-section section-padding">
+        <div class="footer-container glass reveal">
+            <h2>Initialize <span class="gradient-text">Connection</span></h2>
+            <p>Ready to build something extraordinary? Drop a message.</p>
+            
+            
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="input-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " autocomplete="off">
+                        <label for="name">Your Name</label>
+                        <small class="error-msg" id="name-error"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " autocomplete="off">
+                        <label for="email">Email Address</label>
+                        <small class="error-msg" id="email-error"></small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+                    <label for="message">Transmission Data (Message)</label>
+                    <small class="error-msg" id="message-error"></small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary submit-btn">Send Transmission</button>
+                <p id="form-success" class="success-msg"></p>
+            </form>
+
+            <div class="footer-bottom">
+                <ul class="contact-links">
+                    <li><a href="https://github.com/jngb-crz" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jngb-cruz" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:johngabriel2196@gmail.com">Email</a></li>
+                </ul>
+                <p class="copyright">&copy; 2026 John Gabriel Cruz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
